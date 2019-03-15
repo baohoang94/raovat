@@ -1,8 +1,8 @@
-<?php header('Content-type: text/plain; charset=utf-8'); ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<?php include_once ('connect.php') ?>
+<!DOCTYPE html>
+<html>
 <head id="ctl00_Head1">
-<script src="trackjs/90558d670473c21b51bae9aaeadf00327a9464de.js" type="text/javascript"></script>
+<!-- <script src="trackjs/90558d670473c21b51bae9aaeadf00327a9464de.js" type="text/javascript"></script> -->
     <title>
 	Chuyên trang Rao Vặt -  Tổng hợp tin rao vặt người Việt tại Cali  | Chuyen trang Rao Vat - Tong hop tin rao vat nguoi Viet tai Cali | Rao Vặt FREE - Miễn Phí
 </title><meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,7 +13,7 @@
         @import "res/css/common-ie.css";
     </style>
 	<![endif]-->
-    <link href="/WEBSITE/res/css/printreset.css" rel="stylesheet" type="text/css" media="print" />
+    <!-- <link href="/WEBSITE/res/css/printreset.css" rel="stylesheet" type="text/css" media="print" /> -->
     <script type="text/javascript" language="javascript"> 
         var appPath = ''; 
         var maximumFreeChars=150;
