@@ -1,0 +1,66 @@
+﻿@media screen and (max-width:1120px){
+    .page-header-wrapper{width:100%;}
+    .page-wrapper{width:100%;}
+    .body-left{width:29% !important;}
+    .body-right-content{width:70% !important;}
+    .content-vip{width:100%;}
+    .search-panel{display:block; position:relative;}
+     .navigate-content{display:block; position:relative;}
+    .navigate-content div{width:31.5% !important;}
+    .navigate-content .top-navigate-sub-item{width:100% !important;}
+    .content-item{width:31.5%;}
+    .navigate-content{width:auto; display:block;}
+    .page-footer-wrapper{width:100%; padding:0;}
+    .content-normal-detail .detail-content{width:auto;}
+    .detail-holder{width:100%;}
+    .body-left .navigate-holder{width:100%;}
+    .body-left .navigate-content .navigate-item{width:auto !important;}
+    .body-left .navigate-content .navigate-sub-item{width:auto !important;}
+    #linkPathDetail .link-path a.link-back{display:block; margin-top:10px;}
+    }
+    
+@media screen and (max-width:770px)
+{
+    .page-header-wrapper img{height:auto;}
+    .header-category-icon{display:block;}
+    .header-search-addedit{display:block;}
+    .header-body-lpane-text{display:none;}
+    .header-body-rpane{display:none;}
+    .body-left{width:100% !important;}
+    .body-right-content{width:100% !important;}
+    /*.body-right-content .top-navigate-holder{ display:none; z-index:1000; height:auto; width:300px; position:absolute; top:60px; left:5px; background-color:#b4eef2;}*/
+    .navigate-content{ display:none; z-index:1000; height:auto !important; width:280px; position:absolute; top:60px; left:5px; background-color:#b4eef2;-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5); -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5); box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);}
+    .navigate-content div{width:270px !important;}
+    .navigate-content .top-navigate-sub-item{width:270px !important;}
+    
+    .top-navigate-holder .navigate-header-bg, .navigate-holder .navigate-header-bg{display:none;}
+    .body-right-content .top-navigate-holder .navigate-more{ display:none;}
+    .submit-button-panel{display:none;}
+    .search-panel{display:none; z-index:1000; position:absolute; top:65px; left:5px; width:98%;}
+    .search-panel #ddlCategory{width:100% !important;}
+    .search-panel #txtKeyword{width:100% !important;}
+    .search-panel #txtFromDate{width:40% !important;}
+    .search-panel #txtToDate{width:40% !important;}
+    .links-footer{width:100%; text-align:center;}
+     .content-item{width:47%;}
+    .footer-logo    {       width:100%; text-align:center;        }
+    .footer-logo div{text-align:center !important;}
+    .footer-creadit   {       width:100%; text-align:center;        }
+    .page-body .body-left{min-height:0;}
+    
+    .item-content-edit{width:100% !important;  padding:0 !important;}
+    #linkPolicy{margin-right:5px;}
+    .item-content-edit .field {display:block; margin:5px 10px; padding:0 !important; width:93% !important;}
+    .item-content-edit .field span{padding-left:0 !important;}
+    .item-content-edit .field label{width:100% !important; text-align:left !important;}
+    .item-content-edit .field select{width:100%;}
+    .item-content-edit .field #txtItemName, .item-content-edit .field #txtItemSubTitle, .item-content-edit .field #txtItemTags, .item-content-edit .field #txtItemCategory, .item-content-edit .field #txtItemAuthor, .item-content-edit .field #txtItemSource, .item-content-edit .field #txtItemThumbnail, .item-content-edit .field #txtItemSlideShow, .item-content-edit .field #txtItemSmallLeft, .item-content-edit .field #txtItemSummary, .item-content-edit .field #txtItemNote, .item-content-edit .field #txtItemDetail, .item-content-edit .field #txtCategoryName, .item-content-edit .field #txtCategoryCode, .item-content-edit .field #txtCategoryLink, .item-content-edit .field #txtAdvertisingCustomerInfo, .item-content-edit .field #txtAdvertisingLink, .item-content-edit .field #txtAdvertisingName, .item-content-edit .field #txtAdvertisingSubTitle, .item-content-edit .field #txtAdvertisingDetail, .item-content-edit .field #txtAuthor, .item-content-edit .field #txtEmail, .item-content-edit .field #txtName, .item-content-edit .field #txtDetail, .item-content-edit .field #txtReply, .item-content-edit .field #txtFullName, .item-content-edit .field #txtAddress, .item-content-edit .field #txtPhone{width:100% !important; margin:0 5px !important;}
+    .add-edit-vip-panel{margin:5px 10px !important;}
+    }
+@media screen and (max-width:415px)
+{
+    .page-header{height:40px;}
+    .page-header-wrapper img{height:30px !important;}
+    .page-header .header-body-lpane{width:auto !important;}
+    .content-item{width:96%;}
+    }

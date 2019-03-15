@@ -1,0 +1,71 @@
+﻿* 
+{
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+	color: #1e1e1e;
+}
+ul 
+{
+	list-style-type: square;
+}
+
+ul, ol, dl, li, dt, dd 
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+
+body, table, div, ul, li , p 
+{ 
+	margin: 0; padding: 0; 
+}
+
+body 
+{ 
+	font-size: 11pt; 	
+	background-color: #dddddd;
+}
+
+a img, iframe 
+{ 
+	border: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 
+{ 
+	font-weight: normal; 
+}
+
+form, fieldset 
+{ 
+	border: 0; 
+}
+
+legend 
+{ 
+	color: #000; 
+}
+
+table 
+{	
+	border-collapse: collapse; 
+	border: 0; 
+}
+
+td, th, caption 
+{ 
+	font-size: 100%; 
+	font-weight: normal;	
+	text-align: left; 
+}
+
+textarea
+{
+	font-size: 11pt;
+	resize: none;
+}
+
+span.skype_pnh_container {display:none !important;}
+span.skype_pnh_print_container {display:inline !important;} 

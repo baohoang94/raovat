@@ -1,0 +1,360 @@
+﻿.login-form
+{
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 100px;
+} 
+
+.login-form div
+{
+	margin-top :5px;
+}
+
+.login-form div.login-title
+{
+	border-bottom: solid 1px #CCC;	
+	padding: 5px 0px 5px 0px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.login-form div.login-title2
+{
+	font-size: 20px;
+	color: #FF4600;
+	padding: 5px 20px 0px 0px;
+	text-align: right;
+}
+
+.login-form div.login-footer
+{
+	border-top: solid 1px #CCC;	
+	padding: 5px 0px 5px 0px;
+	font-size: 12px;
+	color: #CCC;
+	text-align: right;
+}
+
+.login-form div.login-footer2
+{
+	padding: 5px 0px 5px 0px;
+	font-size: 12px;
+	color: #CCC;
+	text-align: justify;
+}
+	
+.login-form span.padding
+{
+	margin-left: 37px;
+}
+
+.item-holder,
+.category-holder 
+{
+	margin: 0;
+	padding: 0;
+}
+
+.item-holder table td,
+.category-holder table td
+{
+	border: solid 1px #CCC;
+	padding: 3px;
+}
+
+.item-holder table td input,
+.category-holder table td input
+{
+	border: solid 1px #CCC;
+	padding: 2px;
+}
+
+.item-holder table td.header,
+.category-holder table td.header
+{
+	background-color: #FFFDDD;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.category-fuction-holder
+{
+	line-height: 30px;
+	padding: 0px 5px 0px 5px;
+	background-color: #eceddd;
+	border-bottom: solid 1px #CCC;
+}
+
+#center-title
+{
+	font-size:13px; 
+	padding-left: 0.5em; 
+	float: left; 
+	color: #FF0000;
+}
+
+#center-title span
+{
+	font-weight: normal;
+	color: #000;
+}
+
+/*********************************************
+ * form item-content-edit, userEitInfo 
+ *********************************************/
+.item-content-edit
+{
+	font-size: 12px;
+	border:1px solid #dbdbdb;
+	padding:10px 10px 30px 10px;
+	width:500px;
+}
+.item-content-edit-bg
+{
+    background:url(img/bg-post.png) top left repeat-x;
+    float:left;
+    padding:5px;
+    }
+.content-normal
+{
+    background-color:transparent !important;
+    }
+.content-vip-panel .link-path
+{
+    background-color:#ee3086;
+    }
+.item-content-edit p.form-line
+{
+	border-bottom: 1px solid #D5D5D5; 
+	margin: 10px 0 10px 0;
+}
+
+.item-content-edit h3.form-header a
+{
+	font-size: 24px;
+	color: #FF0000;	
+}
+
+.item-content-edit h3.form-header a:hover
+{
+	font-size: 24px;
+	color: #FF0000;	
+}
+
+.item-content-edit h3.form-header i
+{
+	font-size: 12px;
+	color: #555555;	
+}
+
+.item-content-edit h3.form-header i b
+{
+	color: #FF0000;
+}
+
+.item-content-edit h3.form-header
+{
+	color: #000;
+	font-size: 18px;
+	margin: 0 auto; 
+	padding-top: 10px;
+	font-family: Arial;
+}
+.item-content-edit h2.form-group-title
+{
+	color: #777777;
+	font-size: 16px;
+	font-weight: bold;	
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+}
+.item-content-edit .form-remark
+{
+	color: #888888;
+	font-family: verdana;
+	padding-bottom: 4px;
+}
+.item-content-edit .field
+{
+	clear: both;
+	display: block;
+	padding: 4px 0px;
+	line-height: 22px;	
+}
+
+.item-content-edit .field a,
+.item-content-edit .field a:hover,
+.item-content-edit .field a:focus
+{
+	font-size: 10px;
+	color: #45B4DA !important;
+	font-weight: normal !important;
+}
+
+.item-content-edit .field input.txt
+ {
+	background: #fff;
+	border: 1px solid #C0C0C0;
+	height: 22px;
+	padding-left: 2px;
+}
+
+.item-content-edit .field label b
+{
+	color: #f12f86;
+}
+
+.item-content-edit .field2
+{
+	clear: both;
+	display: block;
+	padding: 0px !important;
+	line-height: 22px ;	
+}
+
+.item-content-edit .field2 label
+{
+	display: block;
+	float: left;
+	padding-right: 10px;
+	text-align: right;
+	width: 110px;
+	color: #555555;
+}
+
+.item-content-edit .field label
+{
+	display: block;
+	float: left;
+	padding-right: 10px;
+	text-align: right;
+	width: 110px;
+	color: #555555;
+}
+.item-content-edit .field label.labelLine
+{
+	float: left;
+	padding-right: 15px;
+	text-align: right;
+	width: 110px;
+	color: #555555;
+}
+
+.item-content-edit .field label.normal
+{
+	display: inline;
+	float: none;
+	padding-left: 5px;
+	text-align: left;
+	width: auto;
+	overflow: hidden;
+	color: #000;
+	cursor: pointer;
+}
+
+.item-content-edit .field select
+{
+	float: left;
+	border: 1px solid #C0C0C0;
+	height: 25px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+.item-content-edit .field .img
+{
+	border: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+.item-content-edit .field textarea 
+{
+	background-color: #fffddd;
+	border: 1px solid #C0C0C0;
+	height: 100px;
+	padding-left: 2px;
+	font-size: 16px;
+	font-family: Tahoma;
+	overflow: auto;
+}
+/* xét độ dài cho thẻ input, dropdownbox */
+.item-content-edit .field #txtItemName,
+.item-content-edit .field #txtItemSubTitle,
+.item-content-edit .field #txtItemTags,
+.item-content-edit .field #txtItemCategory,
+.item-content-edit .field #txtItemAuthor,
+.item-content-edit .field #txtItemSource,
+.item-content-edit .field #txtItemThumbnail,
+.item-content-edit .field #txtItemSlideShow,
+.item-content-edit .field #txtItemSmallLeft,
+.item-content-edit .field #txtItemSummary,
+.item-content-edit .field #txtItemNote,
+.item-content-edit .field #txtItemDetail,
+.item-content-edit .field #txtCategoryName,
+.item-content-edit .field #txtCategoryCode,
+.item-content-edit .field #txtCategoryLink,
+.item-content-edit .field #txtAdvertisingCustomerInfo,
+.item-content-edit .field #txtAdvertisingLink,
+.item-content-edit .field #txtAdvertisingName,
+.item-content-edit .field #txtAdvertisingSubTitle,
+.item-content-edit .field #txtAdvertisingDetail,
+.item-content-edit .field #txtAuthor,
+.item-content-edit .field #txtEmail,
+.item-content-edit .field #txtName,
+.item-content-edit .field #txtDetail,
+.item-content-edit .field #txtReply,
+.item-content-edit .field #txtFullName, 
+.item-content-edit .field #txtAddress, 
+.item-content-edit .field #txtPhone
+{
+	width: 375px;
+}
+
+.item-content-edit .field #ddlStatus,
+.item-content-edit .field #ddlLocate
+{
+	width: 130px;
+}
+
+.item-input-select
+{
+    font-size:12px;    
+    border:1px solid #C0C0C0;	
+    width:380px;    
+    padding:2px;
+    font-weight:normal;
+    font-family:Verdana;    
+}
+
+.linkPostVip
+{
+	float: right; 
+	text-align: right; 
+	padding-top: 12px;
+	font-weight: bold;
+}
+ 
+.linkPostVip a
+{
+	font-size: 14px;
+	color: #ff4700;
+}
+
+.linkPostVip a:hover,
+.linkPostVip a:focus
+{
+	font-size: 14px;
+	color: #5CAB4A;
+}
+
+#logo4print
+{
+	width: 840px;
+	margin: auto;
+	visibility: hidden;
+}
+
+#ticketIDHolder,
+#contactInfoHolder
+{
+	display: none;
+}
