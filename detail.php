@@ -16,7 +16,7 @@
             <!-- } body-left -->
             <div class="body-right-content">
                  <!-- navigator {-->
-<?php include_once ('navigator.php') ?>
+<?php include_once ('content-detail.php') ?>
                 <!-- } navigator -->
                 <div class="content-normal-panel">
     <!-- Content Normal { -->
@@ -35,7 +35,7 @@
                                 <span style="color: #fe1010;">Ngày đăng:</span> 1 giờ trước 
                             </div>
                             <div class="summary-panel">
-                                <a href="detail.php">
+                                <a href="index.html">
                                     ahihi the dog 
                                 </a>
                             </div>
