@@ -6,7 +6,14 @@
         <div style="padding-bottom: 3px;">Chọn mục rao vặt:</div>
         <div style="padding-bottom: 10px;">
              <select name="ddlCategory" id="ddlCategory" style="width: 221px; height: 25px; border: solid 1px #ccc">
-                <option value="all">(Tất cả mục rao vặt)</option>
+                <option value="">(Tất cả mục rao vặt)</option>
+                <?php 
+                    $sqlCategory = 'SELECT * FROM category';
+                    $queryCategory = mysqli_query($con, $sqlCategory);
+                    while ($rowCategory = mysqli_fetch_array($queryCategory)) {
+                ?>
+                <option value="<?php echo $rowCategory['id'] ?>"><?php echo $rowCategory['name'] ?></option>
+                <?php } ?>
             </select>
         </div>
         <div style="padding-bottom: 3px;">Nhập rao vặt muốn tìm:</div>
@@ -88,7 +95,7 @@
                      }
                      else if ($('#txtKeyword').val() != '')
                      {
-                        window.location.href= '/tim-rao-vat-google.html?kw=' + encodeURIComponent($('#txtKeyword').val());
+                        window.location.href= 'https://www.google.com/search?q=' + encodeURIComponent($('#txtKeyword').val());
                      }       
                 }
               </script>

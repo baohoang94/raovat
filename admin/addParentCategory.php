@@ -1,6 +1,6 @@
 <?php require_once('../connect.php') ?>
 <?php
-if (!empty($_POST)) {
+if (!empty($_POST['name'])) {
 	$sql_insert = "INSERT INTO parentsCategory(name) VALUES('".$_POST['name']."')";
 	$query_insert = mysqli_query($con, $sql_insert);
 	if ($query_insert) {
@@ -24,7 +24,7 @@ if (!empty($_POST)) {
 		    echo '- ' , $row['name'] , '<br/>';
 		}
 	?>
-	Thêm một chuyên mục cha mới: <br>
+	<h3>Thêm một chuyên mục lớn mới:</h3>
 	<form action="" method="post">
 	Tên chuyên mục cha: <input type="text" name="name" value=""><br>
 	<input type="submit" value="Thêm">

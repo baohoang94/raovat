@@ -1,3 +1,10 @@
+<?php 
+    if (!empty($_GET['id'])) {
+        $sqlNews = "SELECT * FROM news WHERE id = ".$_GET['id'];
+        $queryNews = mysqli_query($con, $sqlNews);
+        $rowNews = mysqli_fetch_array($queryNews);
+    }
+?>
 <div class="content-vip-panel">
                     
     <!-- Link Path { -->
@@ -5,7 +12,7 @@
     
 <div class="link-path">
     <div style="float: left; color:#fff;">
-        <a href="/trang-chu">Trang chủ</a> » <a class="linkPath" href="/chuyen-muc/cho-thue-chothue.html">Cho Thuê</a> » <a class="linkPath" href="/chuyen-muc/100-nha-cho-thue-100.html">100 - Nhà Cho Thuê</a> » Nội dung rao vặt
+        <a href="index.php">Trang chủ</a> <!-- » <a class="linkPath" href="/chuyen-muc/cho-thue-chothue.html">Cho Thuê</a> » <a class="linkPath" href="/chuyen-muc/100-nha-cho-thue-100.html">100 - Nhà Cho Thuê</a> --> » Nội dung rao vặt
     </div>
     <div style="float: right;">
         <a class="link-back" title="Quay lại trang trước" href="javascript:history.back(-1);">Quay lại</a>
@@ -25,20 +32,20 @@
     <div class="content-normal content-normal-detail">
     <div class="detail-content">
         <div class="detail-date">
-            Ngày đăng: 3 ngày trước 
+            Ngày đăng: <?php echo @date('d/m/Y H:i:s', $rowNews['created']) ?>
         </div>
         <div class="detail-panel">
             <div id="heighDetail" style="height: auto; overflow: hidden">
             <div style="height: auto; overflow: hidden">
-                hkzjk kjzkj jdzdlka adklkadlk
+                <?php echo $rowNews['content'] ?>
                 <div class="clear-both"></div>
             </div>
             <div style="height: auto; overflow: hidden; margin-top: 10px; margin-bottom: 10px">
                  <div style="float:left; margin-right:8px;">
                 <div class="g-plus" data-action="share" data-annotation="none" data-gapiscan="true" data-onload="true" data-gapistub="true"></div> 
-                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.2e9f365dae390394eb8d923cba8c5b11.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fraovat.io%2Fhkzjk-kjzkj-jdzdlka-adklkadlk-x04qT8IZ.html&amp;size=m&amp;text=hkzjk%20kjzkj%20jdzdlka%20adklkadlk%20-%20hkzjk%20kjzkj%20jdzdlka%20adklkadlk%20%7C%20Chuy%C3%AAn%20trang%20Rao%20V%E1%BA%B7t&amp;time=1552753795952&amp;type=share&amp;url=http%3A%2F%2Fraovat.io%2Fhkzjk-kjzkj-jdzdlka-adklkadlk-x04qT8IZ.html" __idm_frm__="1017"></iframe>
+                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.2e9f365dae390394eb8d923cba8c5b11.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fraovat.io%2Fhkzjk-kjzkj-jdzdlka-adklkadlk-x04qT8IZ.html&amp;size=m&amp;text=hkzjk%20kjzkj%20jdzdlka%20adklkadlk%20-%20hkzjk%20kjzkj%20jdzdlka%20adklkadlk%20%7C%20Chuy%C3%AAn%20trang%20Rao%20V%E1%BA%B7t&amp;time=1552753795952&amp;type=share&amp;url=http://<?php echo $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?>" __idm_frm__="1017"></iframe>
                 </div> 
-	            <div style="float:left;" class="fb-share-button fb_iframe_widget" data-href="http://raovat.io/hkzjk-kjzkj-jdzdlka-adklkadlk-x04qT8IZ.html" data-layout="button" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fraovat.io%2Fhkzjk-kjzkj-jdzdlka-adklkadlk-x04qT8IZ.html&amp;layout=button&amp;locale=vi_VN&amp;sdk=joey"><span style="vertical-align: bottom; width: 68px; height: 20px;"><iframe name="f1465ff3481e2ec" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/plugins/share_button.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fm5nTkygCewO.js%3Fversion%3D44%23cb%3Df3d90e1ccb2054%26domain%3Draovat.io%26origin%3Dhttp%253A%252F%252Fraovat.io%252Ff2b2dfd25f807cc%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fraovat.io%2Fhkzjk-kjzkj-jdzdlka-adklkadlk-x04qT8IZ.html&amp;layout=button&amp;locale=vi_VN&amp;sdk=joey" style="border: none; visibility: visible; width: 68px; height: 20px;" __idm_frm__="1020" class=""></iframe></span></div>
+	            <div style="float:left;" class="fb-share-button fb_iframe_widget" data-href="http://raovat.io/hkzjk-kjzkj-jdzdlka-adklkadlk-x04qT8IZ.html" data-layout="button" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fraovat.io%2Fhkzjk-kjzkj-jdzdlka-adklkadlk-x04qT8IZ.html&amp;layout=button&amp;locale=vi_VN&amp;sdk=joey"><span style="vertical-align: bottom; width: 68px; height: 20px;"><iframe name="f1465ff3481e2ec" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" src="https://www.facebook.com/plugins/share_button.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fm5nTkygCewO.js%3Fversion%3D44%23cb%3Df3d90e1ccb2054%26domain%3Draovat.io%26origin%3Dhttp%253A%252F%252Fraovat.io%252Ff2b2dfd25f807cc%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2F<?php echo $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?>&amp;layout=button&amp;locale=vi_VN&amp;sdk=joey" style="border: none; visibility: visible; width: 68px; height: 20px;" __idm_frm__="1020" class=""></iframe></span></div>
                 <div class="clear-both"></div>
                 <script type="text/javascript">
     (function () {
@@ -53,8 +60,8 @@
            <div class="detail-customer"><b style="color:#ef388b;">NGƯỜI ĐĂNG:</b>
 <div style="height: auto; padding-top: 10px; font-style:italic;">
 <img alt="" src="res/images/site4/contact.png" align="left" style="margin-right: 5px;" height="50px">
-<b>sấkkslkal &nbsp;&nbsp; (714) 582-3654</b> <br>
-<a href="#" title="Click để xem location trên Google Maps" style="text-decoration: underline">123 ABC St, Santa Ana, 92703</a>
+<b><?php echo $rowNews['name'] ?> &nbsp;&nbsp; <?php echo $rowNews['phone'] ?></b> <br>
+<a href="#" title="Click để xem location trên Google Maps" style="text-decoration: underline"><?php echo $rowNews['address'] ?></a>
 <div class="clear-both"></div>
 </div>
 </div>
@@ -62,7 +69,7 @@
             
              <div style="height: auto; overflow: hidden; margin-top: 10px; margin-bottom: 10px">
                 <!-- Facebook Comments { -->
-                <div class="showcase-title">Bình luận Facebook</div>
+                <!-- <div class="showcase-title">Bình luận Facebook</div>
                 <div class="row">
                     <div class="col-md-12">
                         <div id="fbcomments">
@@ -79,7 +86,7 @@
                         js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1";
                         fjs.parentNode.insertBefore(js, fjs);
                     } (document, 'script', 'facebook-jssdk'));
-                </script>
+                </script> -->
                 <!-- } Facebook Comments -->
             </div>
         </div>

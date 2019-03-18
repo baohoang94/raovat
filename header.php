@@ -58,7 +58,7 @@
                     Tổng hợp tin rao vặt người Việt tại Cali2
                 </div>
                 <div class="header-body-rpane">
-                    <a href="/trang-chu.html" title="Về trang chủ rao vặt" style="color: #d7d7d7">
+                    <a href="index.php" title="Về trang chủ rao vặt" style="color: #d7d7d7">
                         Trang Chủ
                     </a>
                     &nbsp; | &nbsp; <a style="color: #d7d7d7" href="http://facebook.com/">Rao vặt trên facebook</a>
@@ -67,7 +67,7 @@
                 <div class="header-search-addedit">
                     <ul>
                         <li><a id="search_link"><img src="res/images/site4/search.png" alt="" title="Tìm kiếm" /></a></li>
-                        <li><a href="/dang-tin.html"><img src="res/images/site4/addedit.png" alt="" title="Đăng tin" /></a></li>
+                        <li><a href="dang-tin.php"><img src="res/images/site4/addedit.png" alt="" title="Đăng tin" /></a></li>
                     </ul>
                 </div>
                 <div class="clear-both"></div>

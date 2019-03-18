@@ -7,5 +7,6 @@
 <body>
 	<a href="addParentCategory.php" title="">Thêm chuyên mục lớn mới</a><br>
 	<a href="addCategory.php" title="">Thêm chuyên mục nhỏ mới</a><br>
+	<a href="../index.php" title="">Về trang chủ</a><br>
 </body>
 </html>

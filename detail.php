@@ -3,9 +3,9 @@
     <div class="page-body-container">
 <div class="TopBannerCSS">
     <div style='height: auto; overflow: hidden; margin: 0px 0px 0px 0px'>
-<a href="http://raovat.io/dang-tin.html" target="_blank" title="" >
+<!-- <a href="http://raovat.io/dang-tin.html" target="_blank" title="" >
 <img alt="" src="res/quangcao/Image/9/APR03_1100X250_3.jpg" width="1100" height="250" />
-</a>
+</a> -->
 </div>
 </div>
         <div class="page-wrapper">
@@ -21,12 +21,12 @@
                 <div class="content-normal-panel">
     <!-- Content Normal { -->
            <div class="content-normal">
-                <div class="normal-header">
+                <!-- <div class="normal-header">
                     RAO VẶT HÔM NAY
-                </div>
+                </div> -->
                 <div id="magazie" class="content-normal" style="padding-top: 5px;"> 
                     <!-- content item -->
-                    <div class="content-item content-item-grid">
+                    <!-- <div class="content-item content-item-grid">
                         <div style="padding: 10px 10px 10px 10px; margin: 0 !important" class="item-rows" onmouseover="this.className='item-rows-over';" onmouseout="this.className='item-rows';">
                             <div class="cate-panel">
                                 100 - Nhà Cho Thuê
@@ -41,13 +41,13 @@
                             </div>
                             <div class="clear-both"></div>
                         </div>
-                    </div><!-- .content-item -->
+                    </div> --><!-- .content-item -->
                     
                 </div>
                 <div class="normal-footer">
                      <div class="paging">
                         <!-- Paging { -->
-                        <span class="current-none">1</span>
+                        <!-- <span class="current-none">1</span>
 <a href="index.html">2</a>
 <a href="index.html">3</a>
 <a href="index.html">4</a>
@@ -58,7 +58,7 @@
 <a href="index.html">9</a>
 <a href="index.html">...</a>
 <a href="index.html" class="fpnl-page">Next &raquo;</a>
-<a href="index.html" class="fpnl-page">Last</a>
+<a href="index.html" class="fpnl-page">Last</a> -->
                         <!-- } Paging -->
                     </div>
                 </div>

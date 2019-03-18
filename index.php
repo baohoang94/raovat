@@ -26,28 +26,33 @@
                 </div>
                 <div id="magazie" class="content-normal" style="padding-top: 5px;"> 
                     <!-- content item -->
+                    <?php 
+                        $sqlNews = 'SELECT news.*, category.name as nameCategory FROM news INNER JOIN category ON news.categoryId = category.id';
+                        $queryNews = mysqli_query($con, $sqlNews);
+                        while ($rowNews = mysqli_fetch_array($queryNews)) {
+                    ?>
                     <div class="content-item content-item-grid">
                         <div style="padding: 10px 10px 10px 10px; margin: 0 !important" class="item-rows" onmouseover="this.className='item-rows-over';" onmouseout="this.className='item-rows';">
                             <div class="cate-panel">
-                                100 - Nhà Cho Thuê
+                                <?php echo $rowNews['nameCategory'] ?>
                             </div>
                             <div class="date-panel">
-                                <span style="color: #fe1010;">Ngày đăng:</span> 1 giờ trước 
+                                <span style="color: #fe1010;">Ngày đăng:</span> <?php echo date('d/m/Y H:i:s', $rowNews['created']) ?>
                             </div>
                             <div class="summary-panel">
-                                <a href="detail.php">
-                                    ahihi the dog 
+                                <a href="detail.php?id=<?php echo $rowNews['id'] ?>">
+                                    <?php echo $rowNews['content'] ?>
                                 </a>
                             </div>
                             <div class="clear-both"></div>
                         </div>
                     </div><!-- .content-item -->
-                    
+                    <?php }?>
                 </div>
                 <div class="normal-footer">
                      <div class="paging">
                         <!-- Paging { -->
-                        <span class="current-none">1</span>
+                        <!-- <span class="current-none">1</span>
 <a href="index.html">2</a>
 <a href="index.html">3</a>
 <a href="index.html">4</a>
@@ -58,7 +63,7 @@
 <a href="index.html">9</a>
 <a href="index.html">...</a>
 <a href="index.html" class="fpnl-page">Next &raquo;</a>
-<a href="index.html" class="fpnl-page">Last</a>
+<a href="index.html" class="fpnl-page">Last</a> -->
                         <!-- } Paging -->
                     </div>
                 </div>
