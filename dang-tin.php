@@ -24,7 +24,7 @@ if (!empty($_POST)) {
 
 		$query_insert = mysqli_query($con, $sql_insert);
 		if ($query_insert) {
-			echo 'Bản tin đã được thêm thành công<br><a href="index.php">Về trang chủ</a><br>';
+			echo 'Bản tin đã được thêm thành công';
 		}
 	}
 }
@@ -154,6 +154,7 @@ if (!empty($_POST)) {
 	       <input type="submit" class="inputsubmit largesubmit" value="Đăng tin">
 	   </div>
 	</form>
+	<br><a href="index.php">Về trang chủ</a><br>
 </body>
 </html>
 	

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 15, 2019 at 04:21 PM
+-- Generation Time: Mar 18, 2019 at 05:56 AM
 -- Server version: 5.6.37
 -- PHP Version: 5.6.31
 
@@ -40,6 +40,27 @@ CREATE TABLE IF NOT EXISTS `admin` (
 
 CREATE TABLE IF NOT EXISTS `category` (
   `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `parentCategoryId` int(11) NOT NULL,
+  `icon` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `category`
+--
+
+INSERT INTO `category` (`id`, `name`, `parentCategoryId`, `icon`) VALUES
+(1, 'Cho thuê nhà', 1, ''),
+(2, 'Cho thuê phòng', 1, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+  `id` int(11) NOT NULL,
   `categoryId` int(11) NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
   `status` tinyint(1) NOT NULL,
@@ -47,8 +68,17 @@ CREATE TABLE IF NOT EXISTS `category` (
   `created` bigint(20) NOT NULL,
   `phone` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `address` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `address` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id`, `categoryId`, `content`, `status`, `vip`, `created`, `phone`, `name`, `address`, `image`) VALUES
+(1, 1, 'test', 0, 0, 1552837305, '1678136745', 'Hoang', '11 Duy Tân', ''),
+(2, 2, 'test 2', 0, 0, 1552838067, '0000000000', 'Ahihi', '12345', '');
 
 -- --------------------------------------------------------
 
@@ -59,7 +89,16 @@ CREATE TABLE IF NOT EXISTS `category` (
 CREATE TABLE IF NOT EXISTS `parentsCategory` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `parentsCategory`
+--
+
+INSERT INTO `parentsCategory` (`id`, `name`) VALUES
+(1, 'Cho thuê'),
+(2, 'Việc làm'),
+(3, 'Dịch vụ');
 
 --
 -- Indexes for dumped tables
@@ -75,6 +114,12 @@ ALTER TABLE `admin`
 -- Indexes for table `category`
 --
 ALTER TABLE `category`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -96,12 +141,17 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `parentsCategory`
 --
 ALTER TABLE `parentsCategory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

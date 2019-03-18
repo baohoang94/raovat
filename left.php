@@ -1,5 +1,5 @@
 <div class="body-left">
-                <a href="post.php">
+                <a href="dang-tin.php">
                     <div class="submit-button-panel"></div>
                 </a>
 <?php include_once 'content-search.php'; ?>

@@ -44,7 +44,7 @@
 </head>
 <body>
 
-    <form name="aspnetForm" method="post" action="/" id="aspnetForm" enctype="multipart/form-data">
+    <form name="aspnetForm" method="post" action="" id="aspnetForm" enctype="multipart/form-data">
         <div class="page-header">
             <!-- header { -->
             <div class="page-header-wrapper">
